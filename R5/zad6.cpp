@@ -17,16 +17,20 @@ bool CzyPierwsza(int n) {
 }
 
 int main(){
-    int count = 0;
-    int i = 0;
-    while (count!=30){
-        if (CzyPierwsza(i))
+    int n;
+    cout<<"liczba = "; cin>>n;
+    n++;
+    while (true)
+    {
+        if (CzyPierwsza(n))
         {
-            cout<<i<<endl;
-            count++;
+            cout<<n;
+            return 0;
         }
-        i++;
-        
+        n++;
     }
+    
+    
+
 
 }
